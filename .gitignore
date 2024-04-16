@@ -1,0 +1,10 @@
+.env
+**/*.ipynb
+**/*.pdf
+**/*.txt
+**/*.db
+# Ignore text_formatting scripts folder
+text_formatting_scripts/
+dictionary/
+compiled_states/
+cache/

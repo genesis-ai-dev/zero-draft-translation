@@ -1,0 +1,2664 @@
+Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+Use pytorch device_name: cpu
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+Use pytorch device_name: cpu
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+Use pytorch device_name: cpu
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+Created a temporary directory at /tmp/tmpk8jw1pyk
+Writing /tmp/tmpk8jw1pyk/_remote_module_non_scriptable.py
+Use pytorch device_name: cuda
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST http://localhost:1234/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+Created a temporary directory at /tmp/tmpum6pscu9
+Writing /tmp/tmpum6pscu9/_remote_module_non_scriptable.py
+Use pytorch device_name: cuda
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+Retrying request to /chat/completions in 0.885891 seconds
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+GroupChat select_speaker failed to resolve the next speaker's name. This is because the speaker selection OAI call returned:
+team_lead
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+GroupChat select_speaker failed to resolve the next speaker's name. This is because the speaker selection OAI call returned:
+team_lead
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+GroupChat select_speaker failed to resolve the next speaker's name. This is because the speaker selection OAI call returned:
+team_lead
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+GroupChat select_speaker failed to resolve the next speaker's name. This is because the speaker selection OAI call returned:
+team_lead
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+GroupChat select_speaker failed to resolve the next speaker's name. This is because the speaker selection OAI call returned:
+team_lead
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+GroupChat select_speaker failed to resolve the next speaker's name. This is because the speaker selection OAI call returned:
+team_lead
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+GroupChat select_speaker failed to resolve the next speaker's name. This is because the speaker selection OAI call returned:
+team_lead
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+GroupChat select_speaker failed to resolve the next speaker's name. This is because the speaker selection OAI call returned:
+team_lead
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+No default IOStream has been set, defaulting to IOConsole.
+No default IOStream has been set, defaulting to IOConsole.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

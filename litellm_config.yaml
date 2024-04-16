@@ -1,0 +1,17 @@
+model_list:
+  - model_name: anthropic/claude-3-opus
+    litellm_params:
+      model: claude-3-opus-20240229
+      api_base: https://api.anthropic.com/v1/messages
+      api_key: os.environ/ANTHROPIC_API_KEY
+      # explicit max_tokens required because a 256 default is being set otherwise
+      max_tokens: 4000
+# litellm_settings:
+#   drop_params: True
+#   set_verbose: True
+#   stream: False
+# general_settings: 
+#   master_key: os.environ/LITELLM_MASTER_KEY
+#   database_url: os.environ/DATABASE_URL
+#   database_connection_pool_limit: 100
+#   database_connection_timeout: 60

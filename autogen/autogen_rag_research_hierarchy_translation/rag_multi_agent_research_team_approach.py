@@ -13,7 +13,7 @@ from typing import Any, Callable, Dict, List, Literal, Optional, Tuple, Type, Ty
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
-anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
+# anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
 
 config_list = [
     {
@@ -36,12 +36,12 @@ def termination_msg(x):
 
 
 
-target_gen_1_26 = """
-"Na, phitharo si Allah, "Mbalayon tano on sa mga taw na rkano tano a kasimilar. 
-Sogoon tano iran sa mga isda sa mga dagat ombay sa mga torogoy sa kalangitan. 
-Sogoon tano iran sa mga binatang naa sa mga kalangan ombay sa mga binatang mala 
-andao sa duta. Ombay sogoon tano iran sa toro toro nga mga binatang mioyag sa duna."
-"""
+# target_gen_1_26 = """
+# "Na, phitharo si Allah, "Mbalayon tano on sa mga taw na rkano tano a kasimilar. 
+# Sogoon tano iran sa mga isda sa mga dagat ombay sa mga torogoy sa kalangitan. 
+# Sogoon tano iran sa mga binatang naa sa mga kalangan ombay sa mga binatang mala 
+# andao sa duta. Ombay sogoon tano iran sa toro toro nga mga binatang mioyag sa duna."
+# """
 
 english_gen_1_26 = """
 Then God said, "Let us make human beings so that they are like us.
@@ -50,11 +50,12 @@ them rule over the livestock and all the wild animals. And let them rule
 over all the creatures that move along the ground."
 """
 
+
 english_exo_20_13 = "Do not murder."
 
 passage = english_gen_1_26
 source_language = 'English'
-target_language = 'Target'
+target_language = os.getenv('TARGET_LANGUAGE')
 
 problem = f"""Translate the following from {source_language} into {target_language}: 
 {passage}

@@ -6,6 +6,7 @@ from autogen.agentchat.contrib.retrieve_user_proxy_agent import RetrieveUserProx
 # from autogen.agentchat.contrib.capabilities import TransformMessages, transforms
 from dotenv import load_dotenv
 import os
+import re
 import json
 import chromadb
 from typing_extensions import Annotated
@@ -13,10 +14,10 @@ from typing_extensions import Annotated
 from typing import Any, Callable, Dict, List, Literal, Optional, Tuple, Type, TypeVar, Union
 import chromadb.utils.embedding_functions as embedding_functions
 import sacrebleu
+from Translations import Samples
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
-# anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
 
 openai_ef = embedding_functions.OpenAIEmbeddingFunction(
                 api_key=openai_api_key,
@@ -31,21 +32,21 @@ config_list = [
     
 ]
 
-llm_config = {
-    'timeout': 600,
-    # 'seed': 42,
-    'config_list': config_list,
-    'temperature': 0
-}
+# llm_config = {
+#     'timeout': 600,
+#     # 'seed': 42,
+#     'config_list': config_list,
+#     'temperature': 0
+# }
 
 
 def termination_msg(x):
     return isinstance(x, dict) and 'TERMINATE' == str(x.get('content', ''))[-9:].upper()
 
-num_agents = 20
+num_agents = 8
 source_language = 'English'
 target_language = os.getenv('TARGET_LANGUAGE')
-passage = 'In the beginning, God created the heavens and the earth.'
+passage = 'Then God said, \"Let us make mankind in our image, in our likeness, so that they may rule over the fish in the sea and the birds in the sky, over the livestock and all the wild animals, and over all the creatures that move along the ground.\"'
 
 boss = UserProxyAgent(
     name='Boss',
@@ -139,28 +140,30 @@ sampling_lead = ConversableAgent(
     human_input_mode='NEVER',
 )
 
-# voting_lead = ConversableAgent(
-#     name='Sampling Lead',
-#     system_message=f'You are the lead of the voting team.',
-#     llm_config={'config_list': config_list},
-#     description='The lead of the voting team.',
-#     human_input_mode='NEVER',
-# )
 
-translations = []
+voting_lead = ConversableAgent(
+    name='Sampling Lead',
+    system_message=f'You are the lead of the voting team.',
+    llm_config={'config_list': config_list},
+    description='The lead of the voting team.',
+    human_input_mode='NEVER',
+)
+
+
+translations = Samples()
+
 def store_translations(recipient, sender, third_arg):
-    # if recipient.success:
-    translation = sender.last_message(recipient)['content'].strip().strip('"')
-    translations.append(translation)
+    message = sender.last_message(recipient)['content']
+    translation = [match for match in re.findall(r'\[(.*?)\]', message)][-1].strip().strip('"')
+    translations.add_sample(translation)
     print(f'Translation stored from {sender.name}: {translation}')
     return ''
 
-# votes = []
-# def store_votes(recipient, sender, third_arg):
-#     # if recipient.success:
-#     translations.append(sender.last_message(recipient)['content'])
-#     print(f'Translation stored from {sender.name}: {sender.last_message(recipient)['content']}')
-#     return ''
+
+def store_votes(recipient, sender, third_arg):
+    translations.submit_vote(sender.last_message(recipient)['content'])
+    print(f'Vote cast from {sender.name}: {sender.last_message(recipient)['content']}')
+    return ''
 
 
 sampling_agents = []
@@ -175,30 +178,54 @@ for i in range(num_agents):
         # default_auto_reply='Reply `TERMINATE` if the task is done.', 
         description=f'Translator {i} who is assigned a translation task.',
         ))
+    
 
+
+voting_agents = []
+for i in range(num_agents):
+    voting_agents.append(ConversableAgent(
+        name=f'Bilingual interpreter {i}', 
+        system_message=f'You are an expert at analyzing translations from {source_language} to {target_language}.', 
+        llm_config={'config_list': config_list}, 
+        # is_termination_msg=termination_msg, 
+        human_input_mode='NEVER', 
+        code_execution_config=False, 
+        # default_auto_reply='Reply `TERMINATE` if the task is done.', 
+        description=f'Bilingual interpreter {i} who is assigned the task of selecting the best translation from many options.',
+        ))
+    
+
+
+# for caller in sampling_agents:
+#     d_retrieve_content_sample = caller.register_for_llm(
+#         description=f'Retrieve content for answering questions regarding translating between {source_language} and {target_language}.',
+#         api_style='function'
+#     )(retrieve_dictionary_content)
+
+# sampling_lead.register_for_execution()(d_retrieve_content_sample)
 
 for caller in sampling_agents:
     d_retrieve_content = caller.register_for_llm(
         description=f'Retrieve content for answering questions regarding translating between {source_language} and {target_language}.',
         api_style='function'
-    )(retrieve_dictionary_content)
+    )(retrieve_example_content)
 
 sampling_lead.register_for_execution()(d_retrieve_content)
 
-# for caller in sampling_agents:
-#     d_retrieve_content = caller.register_for_llm(
-#         description=f'Retrieve content for answering questions regarding translating between {source_language} and {target_language}.',
-#         api_style='function'
-#     )(retrieve_example_content)
+for caller in voting_agents:
+    d_retrieve_content_vote = caller.register_for_llm(
+        description=f'Retrieve content for answering questions regarding translating between {source_language} and {target_language}.',
+        api_style='function'
+    )(retrieve_dictionary_content)
 
-# sampling_lead.register_for_execution()(d_retrieve_content)
+voting_lead.register_for_execution()(d_retrieve_content_vote)
 
 
 sampling_chats = []    
 for i, agent in enumerate(sampling_agents):
     chat = {
         'recipient': agent,
-        'message': f'Retrieve content and translate the following from {source_language} to {target_language}: {passage}. Just provide the {target_language} translation, nothing else.',
+        'message': f'Retrieve content and translate the following from {source_language} to {target_language}: {passage}. Explain your reasoning first and end your response with only {target_language} translation in square brackets.',
         'max_turns': 2,
         'summary_method': store_translations,
     }
@@ -209,6 +236,29 @@ sampling_lead.register_nested_chats(
     trigger=boss,
 )
 
+def voting_agent_callable_message(recipient, messages, sender, config):
+    message = f'''
+            Retrieve content to analyze the following translations from {source_language} to {target_language}: {translations.top_bleu_samples}. 
+            Select the most natural and faithful translation of [\"{passage}\"] by providing your reasoning. 
+            End your response with only square brackets containing only the designating letter of the best translation.'''
+    return message
+
+voting_chats = []    
+for i, agent in enumerate(voting_agents):
+    chat = {
+        'recipient': agent,
+        'message': voting_agent_callable_message,
+        'max_turns': 2,
+        'summary_method': store_votes,
+    }
+    voting_chats.append(chat)
+
+voting_lead.register_nested_chats(
+    voting_chats,
+    trigger=boss,
+)
+
+
 boss.initiate_chats(
     [
         {
@@ -216,28 +266,20 @@ boss.initiate_chats(
             'message': 'Assign the translation task to the team.',
             'max_turns': 1,
             'summary_method': None,
-        }
+        },
+        {
+            'recipient': voting_lead,
+            'message': 'Assign the voting task to the team.',
+            'max_turns': 1,
+            'summary_method': None,
+        },
     ]
 )
 
 
-[print(translation) for translation in translations]
+print(f'\nAll samples: {translations.all_samples}')
+print(f'\nTop BLEU samples: {translations.top_bleu_samples}')
+print(f'\nWinner: {translations.majority_vote}')
 
-def top_bleu_sentences(sentences: list, n: int) -> list:
-    # Calculate BLEU scores for each sentence against all others
-    bleu_scores = {}
-    for i, candidate in enumerate(sentences):
-        references = [ref for j, ref in enumerate(sentences) if i != j]
-        score = sacrebleu.sentence_bleu(candidate, references).score
-        bleu_scores[sentences[i]] = score
 
-    # Sort sentences by their BLEU score in descending order
-    sorted_sentences = sorted(bleu_scores, key=bleu_scores.get, reverse=True)
 
-    # Return the top n distinct sentences with the highest scores
-    return sorted_sentences[:n]
-
-top_translations = top_bleu_sentences(translations, 3)
-
-print('\nTop translations:')
-[print(translation) for translation in top_translations]

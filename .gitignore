@@ -8,3 +8,8 @@ text_formatting_scripts/
 dictionary/
 compiled_states/
 cache/
+tmp/
+autogen_self_consistency_approach/__pycache__/
+/tmp
+/autogen_self_consistency_approach/__pycache__
+tmp/db/chroma.sqlite3

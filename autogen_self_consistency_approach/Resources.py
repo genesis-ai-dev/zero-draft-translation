@@ -15,7 +15,7 @@ class TextFileProcessor:
         self.text_split = text_split_function
         self.temp_directory = tempfile.mkdtemp(dir=tempfile.gettempdir())
         self.temp_files = []
-        self.max_chunks_per_file = 1000 # 2048
+        self.max_chunks_per_file = 2000 # 2048
         self.max_tokens_per_file = 900000 # 1000000
         self.max_tokens_per_chunk = 8000 # 8191
 

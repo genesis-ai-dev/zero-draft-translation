@@ -16,7 +16,9 @@ import chromadb.utils.embedding_functions as embedding_functions
 import sacrebleu
 from Translations import Samples
 from ModelClient import AnthropicClient
+from Resources import TextFileProcessor
 import tiktoken
+from Levenshtein import ratio
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -26,7 +28,8 @@ anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
 config_list = [
     {
         # Choose your model name.
-        "model": "claude-3-sonnet-20240229",
+        "model": "claude-3-haiku-20240307",
+        # "model": "claude-3-opus-20240229",
         # You need to provide your API key here.
         "api_key": anthropic_api_key,
         "base_url": "https://api.anthropic.com",
@@ -47,12 +50,6 @@ openai_ef = embedding_functions.OpenAIEmbeddingFunction(
                 model_name="text-embedding-ada-002"
             )
 
-def num_tokens_from_string(string: str, encoding_name: str) -> int:
-    """Returns the number of tokens in a text string."""
-    encoding = tiktoken.get_encoding(encoding_name)
-    num_tokens = len(encoding.encode(string))
-    return num_tokens
-
 num_agents = 8
 source_language = 'English'
 target_language = os.getenv('TARGET_LANGUAGE')
@@ -60,6 +57,38 @@ passage = 'Then God said, \"Let us make mankind in our image, in our likeness, s
 
 
 client = chromadb.PersistentClient(path='/tmp/chromadb')
+
+def text_split(text: str) -> List[str]:
+    # Updated regex to better capture sentences or larger text blocks without curly braces
+    pattern = r'\{(?:[^{}]*|\{[^{}]*\})*\}|[^{}]+'
+
+    # Find all matches for the pattern in the text
+    parts = re.findall(pattern, text, re.DOTALL)
+
+    result = []
+    for part in parts:
+        num_lines = 1
+        # Remove leading and trailing spaces and newlines
+        part = part.strip()
+        # Split the non-brace part by two lines
+        lines = part.split('\n')
+        for i in range(0, len(lines), num_lines):
+            combined_lines = '\n'.join(lines[i:i+num_lines]).strip()
+            if combined_lines:  # Make sure not to add empty strings
+                result.append(combined_lines)
+            # if result:  # Check if result has items to avoid out-of-index errors
+        # print(f'chunk: {result[-1]}')
+
+    return result
+
+resources = TextFileProcessor(
+    file_paths=[
+        os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
+        os.path.join(os.path.abspath(''), 'dictionary', 'quran_english_target_joined.txt'),
+        os.path.join(os.path.abspath(''), 'dictionary', 'target_dictionary.txt'),
+    ],
+    text_split_function=text_split,
+)
 
 librarian = RetrieveUserProxyAgent(
     name='Librarian',
@@ -70,25 +99,45 @@ librarian = RetrieveUserProxyAgent(
     description='Assistant who has extra content retrieval power for looking up words and sentence structure.',
     retrieve_config={
         'task': 'qa',
-        'docs_path': [
-            os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_formatted.txt'),
-            os.path.join(os.path.abspath(''), 'dictionary', 'english-target-dialogs-drills.txt'),
-            os.path.join(os.path.abspath(''), 'dictionary', 'quran_english_target.txt'),
-            os.path.join(os.path.abspath(''), 'dictionary', 'target_dictionary.json'),
-        ],
-        'custom_text_types': ['txt', 'json'], ## Not included in example
-        'chunk_token_size': 2000,
+        'docs_path': resources.temp_files,
+        'custom_text_types': ['txt'], ## Not included in example
+        # 'chunk_token_size': 200, #2000
         'model': config_list[0]['model'],
         'must_break_at_empty_line': False, ## Not included in example
         'client': client,
-        'collection_name': 'groupchat',
+        # 'collection_name': 'groupchat',
         # 'embedding_model': 'all-mpnet-base-v2', ## Not included in example
         'embedding_function': openai_ef, ## Not included in example
         'get_or_create': True,
-        'context_max_tokens':100000,
+        'context_max_tokens':50000,
+        'custom_text_split_function': text_split,
+        # 'chunk_mode': 'one_line',
+        # 'must_break_at_empty_line': True,
     },
 )
 librarian.human_input_mode = 'NEVER' # Disable human input for librarian since it only retrieves data
+
+
+def retrieve_example_content(
+    message: Annotated[
+        str,
+        'Refined message which keeps the original meaning and can be used to retrieve content for translation question answering.'
+    ],
+    n_results: Annotated[int, 'Number of results'] = 20,
+) -> str:
+    librarian.n_results = 20, # n_results # Number of results to retrieve
+    # librarian._max_tokens = 200 # Overriding default value of 4000 when non oia model used
+    # Check if the content needs updating
+    update_context_case1, update_context_case2 = librarian._check_update_context(message)
+    if (update_context_case1 or update_context_case2) and librarian.update_context:
+        print(f'Updating context for librarian with message: {message}')
+        librarian.problem = message if not hasattr(librarian, 'problem') else librarian.problem
+        _, ret_msg = librarian._generate_retrieve_user_reply(message)
+    else:
+        print(f'Not updating context for librarian with message: {message}')
+        _context = {'problem': message, 'n_results': n_results}
+        ret_msg = librarian.message_generator(librarian, None, _context)
+    return ret_msg if ret_msg else message
 
 
 user_proxy = UserProxyAgent(
@@ -105,46 +154,34 @@ user_proxy = UserProxyAgent(
 )
 
 
-def retrieve_example_content(
-    message: Annotated[
-        str,
-        'Refined message which keeps the original meaning and can be used to retrieve content for translation question answering.'
-    ],
-    n_results: Annotated[int, 'Number of results'] = 3,
+def retrieve_dictionary_content(
+    message: str,
+    n_results_per_word: int = 4,
 ) -> str:
-    librarian.n_results = n_results # Number of results to retrieve
-    # Check if the content needs updating
-    update_context_case1, update_context_case2 = librarian._check_update_context(message)
-    if (update_context_case1 or update_context_case2) and librarian.update_context:
-        librarian.problem = message if not hasattr(librarian, 'problem') else librarian.problem
-        _, ret_msg = librarian._generate_retrieve_user_reply(message)
-    else:
-        _context = {'problem': message, 'n_results': n_results}
-        ret_msg = librarian.message_generator(librarian, None, _context)
-    return ret_msg if ret_msg else message
-
-
-
-# def retrieve_dictionary_content(
-#     message: str,
-#     n_results_per_word: int = 8,
-# ) -> str:
-#     with open('dictionary/target_dictionary.json', 'r', encoding='utf-8') as file:
-#         dictionary = json.load(file)
-#     words = message.split()
-#     relevant_entries = []
-#     for word in words:
-#         word_relevant_entries = []
-#         for entry in dictionary:
-#             entry_text = f"{entry.get('word', '')} {entry.get('definition', '')} {entry.get('example', '')} {entry.get('translation', '')}"
-#             if word.lower() in entry_text.lower():
-#                 word_relevant_entries.append(entry)
-#                 if len(word_relevant_entries) == n_results_per_word:
-#                     break
-#         relevant_entries.extend(word_relevant_entries)
+    with open('dictionary/target_dictionary.json', 'r', encoding='utf-8') as file:
+        dictionary = json.load(file)
     
-#     # Converting the dictionary entries to a string format for return
-#     return json.dumps(relevant_entries, indent=2, ensure_ascii=False)
+    words = message.split()
+    relevant_entries = []
+    for word in words:
+        word_relevant_entries = []
+        # Use a dictionary to store entries and their similarity scores
+        similarity_scores = {}
+        
+        for entry in dictionary:
+            entry_text = f"{entry.get('word', '')} {entry.get('definition', '')} {entry.get('example', '')} {entry.get('translation', '')}"
+            # Calculate similarity score
+            score = ratio(word.lower(), entry_text.lower())
+            similarity_scores[entry_text] = score
+        
+        # Find the entries with the highest similarity scores
+        sorted_entries = sorted(similarity_scores.items(), key=lambda item: item[1], reverse=True)
+        top_entries = [entry for entry, score in sorted_entries[:n_results_per_word]]
+        
+        relevant_entries.extend(top_entries)
+
+    # Converting the dictionary entries to a string format for return
+    return json.dumps(relevant_entries, indent=2, ensure_ascii=False)
 
 
 
@@ -170,16 +207,23 @@ voting_lead = ConversableAgent(
 
 
 
-translations = Samples()
+translations = Samples(method='top_bleu')
 
 def store_translations(recipient, sender, third_arg):
     full_message = sender.last_message(recipient)
     print(f'Full message received in store_translations: {full_message}')
-    
-    message = sender.last_message(recipient)['content']
-    translation = [match for match in re.findall(r'\[(.*?)\]', message)][-1].strip().strip('"')
-    translations.add_sample(translation)
-    print(f'Translation stored from {sender.name}: {translation}')
+
+    message = sender.last_message(recipient).get('content')
+    if message and '[' in message and ']' in message:
+        try:
+            translation = [match for match in re.findall(r'\[(.*?)\]', message)][-1].strip().strip('"')
+            translations.add_sample(translation)
+            print(f'Translation stored from {sender.name}: {translation}')
+        except IndexError:
+            print(f"No valid translation found in the message from {sender.name}.")
+    else:
+        print(f"No translation brackets found in the message from {sender.name}.")
+
     return ''
 
 
@@ -271,7 +315,7 @@ sampling_lead.register_nested_chats(
 # Message must be a callable function in order for translations.top_bleu_samples to be live data (not empty data from when nested chat is registered)
 def voting_agent_callable_message(recipient, messages, sender, config):
     message = f'''
-            Retrieve content to analyze the following translations from {source_language} to {target_language}: {translations.top_bleu_samples}. 
+            Retrieve content only once to analyze the following translations from {source_language} to {target_language}: {translations.top_bleu_samples}. 
             Select the most natural and faithful translation of [\"{passage}\"] by providing your reasoning. 
             End your response with only square brackets containing only the designating letter of the best translation.'''
     return message

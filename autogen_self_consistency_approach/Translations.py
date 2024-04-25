@@ -12,10 +12,13 @@ def index_to_column(index):
     return column
 
 class Samples:
-    def __init__(self):
+    def __init__(self, method):
         self.samples = []
         self.votes = []
         self.num_top_bleu = 3
+        if method not in ['all', 'top_bleu']:
+            raise ValueError('Invalid method. Must be "all" or "top_bleu".')
+        self.method = method 
 
     def add_sample(self, sample):
         self.samples.append(sample)
@@ -24,7 +27,6 @@ class Samples:
     @functools.lru_cache()
     def top_bleu_samples(self):
         # Calculate BLEU scores for each sentence against all others
-        self.method = 'top_bleu'
         bleu_scores = {}
         for i, candidate in enumerate(self.samples):
             references = [ref for j, ref in enumerate(self.samples) if i != j]
@@ -43,16 +45,23 @@ class Samples:
     @property
     @functools.lru_cache()
     def all_samples(self):
-        self.method = 'all'
         return [f'[{index_to_column(i)}] {sentence}' for i, sentence in enumerate(self.samples)]
 
 
     def submit_vote(self, vote_str):
         # Get the last letter in square brackets
         # vote_letter = [match for match in re.findall(r'\[(.*?)\]', vote_str)][-1].upper()
-        vote_letter = re.sub(r'[^A-Z]', '', [match for match in re.findall(r'\[(.*?)\]', vote_str)][-1]).upper()
+        if vote_str and '[' in vote_str and ']' in vote_str:
+            try:
+                vote_letter = re.sub(r'[^A-Z]', '', [match for match in re.findall(r'\[(.*?)\]', vote_str)][-1]).upper()
+                self.votes.append(vote_letter)
+            except IndexError:
+                print('Invalid vote format.')
+                return
+        else:
+            print(f'Invalid vote format: {vote_str}')
         print(f'Vote submitted: {vote_letter}')
-        self.votes.append(vote_letter)
+        return
 
 
     @property

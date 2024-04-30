@@ -22,6 +22,7 @@ from Resources import TextFileProcessor
 import tiktoken
 from Levenshtein import ratio
 from CustomRetrieveUserProxyAgent import CustomRetrieveUserProxyAgent
+from ScriptureReference import ScriptureReference
 
 
 if __name__ == '__main__':
@@ -55,11 +56,13 @@ if __name__ == '__main__':
                     model_name="text-embedding-ada-002"
                 )
 
-    num_agents = 8
+    num_agents = 20
     source_language = 'English'
     target_language = os.getenv('TARGET_LANGUAGE')
-    passage = 'Then God said, \"Let us make mankind in our image, in our likeness, so that they may rule over the fish in the sea and the birds in the sky, over the livestock and all the wild animals, and over all the creatures that move along the ground.\"'
-
+    # passage = 'Then God said, \"Let us make mankind in our image, in our likeness, so that they may rule over the fish in the sea and the birds in the sky, over the livestock and all the wild animals, and over all the creatures that move along the ground.\"'
+    passages = ScriptureReference('gen 1:1', 'gen 2:1').verses
+    current_passage = passages[0]
+    print(f'Current passage: {current_passage}')
 
     client = chromadb.PersistentClient(path='/tmp/chromadb')
     # qdrant_client = QdrantClient(":memory:")
@@ -88,8 +91,8 @@ if __name__ == '__main__':
         return result
 
     files = [
-        os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
-        os.path.join(os.path.abspath(''), 'dictionary', 'quran_english_target_joined.txt'),
+        # os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
+        # os.path.join(os.path.abspath(''), 'dictionary', 'quran_english_target_joined.txt'),
         os.path.join(os.path.abspath(''), 'dictionary', 'target_dictionary.txt'),
     ]
 
@@ -107,7 +110,10 @@ if __name__ == '__main__':
         description='Assistant who has extra content retrieval power for looking up words and sentence structure.',
         retrieve_config={
             'task': 'qa',
-            'docs_path': files, # resources.temp_files,
+            'docs_path': [
+                os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
+                os.path.join(os.path.abspath(''), 'dictionary', 'quran_english_target_joined.txt'),
+            ],
             # 'custom_text_types': ['txt'], 
             'model': config_list[0]['model'],
             'must_break_at_empty_line': False, ## Not included in example
@@ -117,6 +123,32 @@ if __name__ == '__main__':
             'context_max_tokens':50000,
             'custom_text_split_function': text_split,
             # 'chunk_mode': 'one_line',
+            'collection_name': 'examples',
+        },
+    )
+
+    dictionarian = CustomRetrieveUserProxyAgent(
+        name='Librarian',
+        is_termination_msg=termination_msg,
+        human_input_mode='NEVER',
+        max_consecutive_auto_reply=3,
+        code_execution_config=False,
+        description='Assistant who has extra content retrieval power for looking up words in a dictionary.',
+        retrieve_config={
+            'task': 'qa',
+            'docs_path': [
+                os.path.join(os.path.abspath(''), 'dictionary', 'target_dictionary.txt'),
+            ],
+            # 'custom_text_types': ['txt'], 
+            'model': config_list[0]['model'],
+            'must_break_at_empty_line': False, ## Not included in example
+            'client': client,
+            'embedding_function': openai_ef, ## Not included in example
+            # 'get_or_create': True,
+            'context_max_tokens':50000,
+            'custom_text_split_function': text_split,
+            # 'chunk_mode': 'one_line',
+            'collection_name': 'dictionary',
         },
     )
 
@@ -132,18 +164,40 @@ if __name__ == '__main__':
         ],
         n_results: Annotated[int, 'Number of results'] = 20,
     ) -> str:
-        librarian.n_results = 20, # n_results # Number of results to retrieve
+        # n_results = 30
+        librarian.n_results = 30
+        dictionarian.n_results = 8 # n_results # Number of results to retrieve
         # librarian._max_tokens = 200 # Overriding default value of 4000 when non oia model used
+
         # Check if the content needs updating
         update_context_case1, update_context_case2 = librarian._check_update_context(message)
         if (update_context_case1 or update_context_case2) and librarian.update_context:
             print(f'Updating context for librarian with message: {message}')
             librarian.problem = message if not hasattr(librarian, 'problem') else librarian.problem
-            _, ret_msg = librarian._generate_retrieve_user_reply(message)
+            _, lib_ret_msg = librarian._generate_retrieve_user_reply(message)
         else:
             print(f'Not updating context for librarian with message: {message}')
-            _context = {'problem': message, 'n_results': n_results}
-            ret_msg = librarian.message_generator(librarian, None, _context)
+            _context = {'problem': message, 'n_results': librarian.n_results}
+            lib_ret_msg = librarian.message_generator(librarian, None, _context)
+
+        words = list(set(message.split()))
+        all_entries = []
+
+        for word in words:
+            update_context_case1, update_context_case2 = dictionarian._check_update_context(word)
+            if (update_context_case1 or update_context_case2) and dictionarian.update_context:
+                print(f'Updating context for dictionarian with word: {word}')
+                dictionarian.problem = word if not hasattr(dictionarian, 'problem') else dictionarian.problem
+                _, dict_ret_msg = dictionarian._generate_retrieve_user_reply(word)
+            else:
+                print(f'Not updating context for dictionarian with word: {word}')
+                _context = {'problem': word, 'n_results': dictionarian.n_results}
+                dict_ret_msg = dictionarian.message_generator(dictionarian, None, _context)
+            all_entries.append(dict_ret_msg)
+        dict_ret_msg = '\n\n'.join(all_entries)
+
+        ret_msg = f'{lib_ret_msg}\n\n{dict_ret_msg}'
+
         return ret_msg if ret_msg else message
 
 
@@ -303,12 +357,18 @@ if __name__ == '__main__':
         agent.register_model_client(model_client_cls=AnthropicClient)
 
 
+    # Message must be a callable function in order for current_passage to be live data (not first verse from when nested chat is registered)
+    def sampling_agent_callable_message(recipient, messages, sender, config):
+        message = f'''Retrieve content and translate the following from {source_language} to {target_language}: {current_passage}. 
+                Explain your reasoning first and end your response with only {target_language} translation in square brackets.'''
+        return message
+
 
     sampling_chats = []    
     for i, agent in enumerate(sampling_agents):
         chat = {
             'recipient': agent,
-            'message': f'Retrieve content and translate the following from {source_language} to {target_language}: {passage}. Explain your reasoning first and end your response with only {target_language} translation in square brackets.',
+            'message': sampling_agent_callable_message,
             'max_turns': 2,
             'summary_method': store_translations,
         }
@@ -323,7 +383,7 @@ if __name__ == '__main__':
     def voting_agent_callable_message(recipient, messages, sender, config):
         message = f'''
                 Retrieve content only once to analyze the following translations from {source_language} to {target_language}: {translations.top_bleu_samples}. 
-                Select the most natural and faithful translation of [\"{passage}\"] by providing your reasoning. 
+                Select the most natural and faithful translation of [\"{current_passage}\"] by providing your reasoning. 
                 End your response with only square brackets containing only the designating letter of the best translation.'''
         return message
 
@@ -345,27 +405,42 @@ if __name__ == '__main__':
     # boss.register_model_client(model_client_cls=AnthropicClient)
     # librarian.register_model_client(model_client_cls=AnthropicClient)
 
-    user_proxy.initiate_chats(
-        [
-            {
-                'recipient': sampling_lead,
-                'message': 'Assign the translation task to the team.',
-                'max_turns': 1,
-                'summary_method': None,
-            },
-            {
-                'recipient': voting_lead,
-                'message': 'Assign the voting task to the team.',
-                'max_turns': 1,
-                'summary_method': None,
-            },
-        ]
-    )
+    translated_verses = []
+
+    try:
+        for i, _ in enumerate(passages):
+            
+            user_proxy.initiate_chats(
+                [
+                    {
+                        'recipient': sampling_lead,
+                        'message': 'Assign the translation task to the team.',
+                        'max_turns': 1,
+                        'summary_method': None,
+                    },
+                    {
+                        'recipient': voting_lead,
+                        'message': 'Assign the voting task to the team.',
+                        'max_turns': 1,
+                        'summary_method': None,
+                    },
+                ]
+            )
+
+            translated_verses.append(translations.majority_vote)
+            current_passage = passages[i+1] 
 
 
-    print(f'\nAll samples: {translations.all_samples}')
-    print(f'\nTop BLEU samples: {translations.top_bleu_samples}')
-    print(f'\nWinner: {translations.majority_vote}')
+            print(f'\nAll samples: {translations.all_samples}')
+            print(f'\nTop BLEU samples: {translations.top_bleu_samples}')
+            print(f'\nWinner: {translations.majority_vote}')
+
+            translations.reset()
+
+    except Exception as e:
+        print(f'Error: {e}')
+    
+        [print(verse) for verse in translated_verses]
 
 
 

@@ -20,11 +20,16 @@ class Samples:
             raise ValueError('Invalid method. Must be "all" or "top_bleu".')
         self.method = method 
 
+    def reset(self):
+        self.samples = []
+        self.votes = []
+        self.num_top_bleu = 3
+
     def add_sample(self, sample):
         self.samples.append(sample)
 
     @property
-    @functools.lru_cache()
+    # @functools.lru_cache()
     def top_bleu_samples(self):
         # Calculate BLEU scores for each sentence against all others
         bleu_scores = {}
@@ -43,7 +48,7 @@ class Samples:
     
 
     @property
-    @functools.lru_cache()
+    # @functools.lru_cache()
     def all_samples(self):
         return [f'[{index_to_column(i)}] {sentence}' for i, sentence in enumerate(self.samples)]
 
@@ -51,6 +56,7 @@ class Samples:
     def submit_vote(self, vote_str):
         # Get the last letter in square brackets
         # vote_letter = [match for match in re.findall(r'\[(.*?)\]', vote_str)][-1].upper()
+        vote_letter = None
         if vote_str and '[' in vote_str and ']' in vote_str:
             try:
                 vote_letter = re.sub(r'[^A-Z]', '', [match for match in re.findall(r'\[(.*?)\]', vote_str)][-1]).upper()
@@ -60,7 +66,8 @@ class Samples:
                 return
         else:
             print(f'Invalid vote format: {vote_str}')
-        print(f'Vote submitted: {vote_letter}')
+        if vote_letter is not None:
+            print(f'Vote submitted: {vote_letter}')
         return
 
 

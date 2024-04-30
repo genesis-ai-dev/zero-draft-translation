@@ -13,3 +13,6 @@ autogen_self_consistency_approach/__pycache__/
 /tmp
 /autogen_self_consistency_approach/__pycache__
 tmp/db/chroma.sqlite3
+tmp/db/chroma.sqlite3
+/autogen_self_consistency_approach/__pycache__
+/autogen_self_consistency_approach/__pycache__

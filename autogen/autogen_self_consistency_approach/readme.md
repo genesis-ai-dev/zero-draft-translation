@@ -12,7 +12,7 @@ pip install pyautogen chromadb sacrebleu python-Levenshtein tiktoken dotenv
 ```
 
 ## Environment Setup
-Create a .env file in your project root directory.
+Create a .env file in your project root directory.\
 Add your API keys and target language to the .env file as follows:
 
 ```bash
@@ -73,7 +73,7 @@ librarian = CustomRetrieveUserProxyAgent(
     },
 )
 ```
-To apply custom rules to how the resources are chunked/split, uncomment `custom_text_split_function` kwarg, comment out `chunk_mode` kwarg, and modify the existing `text_split` function as desired.
+To apply custom rules to how the resources are chunked/split, uncomment `custom_text_split_function` kwarg, comment out `chunk_mode` kwarg, and modify the existing `text_split` function as desired.\
 Declare where resource files are located here:
 ```python
 example_files = [
@@ -92,8 +92,8 @@ dictionarian.n_results = 8
 ```
 
 ## Deleting Cache Resources
-To ensure fresh results, you might need to clear cache directories periodically:
+To ensure fresh results, you might need to clear cache directories periodically:\
 
-Delete contents of the root `__pycache__` folder.
-Delete contents of the root `tmp/db` folder.
-Delete contents of the `<root>/tmp/chromadb` folder.
+Delete contents of the root `__pycache__` folder.\
+Delete contents of the root `tmp/db` folder.\
+Delete contents of the `<root>/tmp/chromadb` folder.\

@@ -3,16 +3,13 @@
 **/*.pdf
 **/*.txt
 **/*.db
+**/*.sqlite3
 # Ignore text_formatting scripts folder
 text_formatting_scripts/
 dictionary/
 compiled_states/
 cache/
 tmp/
-autogen_self_consistency_approach/__pycache__/
 /tmp
 /autogen_self_consistency_approach/__pycache__
 tmp/db/chroma.sqlite3
-tmp/db/chroma.sqlite3
-/autogen_self_consistency_approach/__pycache__
-/autogen_self_consistency_approach/__pycache__

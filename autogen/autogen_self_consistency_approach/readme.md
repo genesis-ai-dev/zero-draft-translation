@@ -1,6 +1,8 @@
 ## Overview
 This script facilitates a translation and voting process where n agents generate translations, and n agents vote on the best translation from the top three (based on BLEU score). Agents retrieve resources including the most relevant English & Target Language paired verses, and dictionary entries from the target language.
 
+![Agent Communication Diagram](agent_sample_vote_diagram.png)  
+
 ## Prerequisites
 ### Packages Installation
 Run the following command to install the necessary packages:

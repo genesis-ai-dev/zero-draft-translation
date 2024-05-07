@@ -3,8 +3,8 @@ from autogen import AssistantAgent, UserProxyAgent, ConversableAgent
 from autogen.agentchat.conversable_agent import Agent, initiate_chats
 from autogen.agentchat.contrib.retrieve_assistant_agent import RetrieveAssistantAgent
 from autogen.agentchat.contrib.retrieve_user_proxy_agent import RetrieveUserProxyAgent
-from autogen.agentchat.contrib.qdrant_retrieve_user_proxy_agent import QdrantRetrieveUserProxyAgent
-from qdrant_client import QdrantClient
+# from autogen.agentchat.contrib._retrieve_user_proxy_agent import QdrantRetrieveUserProxyAgent
+# from qdrant_client import QdrantClient
 # from autogen.agentchat.contrib.capabilities import TransformMessages, transforms
 from dotenv import load_dotenv
 import os
@@ -43,6 +43,7 @@ config_list = [
     #     'model': 'gpt-4-turbo',
     #     'api_key': openai_api_key,
     # },
+    # # Local model below may have an issue with function calling (i.e., calling RAG agent)
     # {
     #     'model': 'does not matter',
     #     'api_key': 'does not matter',
@@ -58,11 +59,11 @@ openai_ef = embedding_functions.OpenAIEmbeddingFunction(
                 model_name="text-embedding-ada-002"
             )
 
-num_agents = 4 # >= 4
+num_agents = 20 # >= 4
 source_language = 'English'
 target_language = os.getenv('TARGET_LANGUAGE')
 # Enter verse range to be translated 
-passages = ScriptureReference('gen 1:1', 'gen 1:2').verses
+passages = ScriptureReference('gen 1:1', 'gen 1:5').verses
 
 example_files = [
     os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
@@ -157,8 +158,8 @@ dictionarian = CustomRetrieveUserProxyAgent(
         'embedding_function': openai_ef, ## Not included in example
         # 'get_or_create': True,
         'context_max_tokens':50000,
-        'custom_text_split_function': text_split,
-        # 'chunk_mode': 'one_line',
+        # 'custom_text_split_function': text_split,
+        'chunk_mode': 'one_line',
         'collection_name': 'dictionary',
     },
 )
@@ -174,7 +175,7 @@ def retrieve_example_content(
     n_results: Annotated[int, 'Number of results'] = 20,
 ) -> str:
     # n_results = 30
-    librarian.n_results = 60
+    librarian.n_results = 30
     dictionarian.n_results = 8 
 
     # Check if the content needs updating
@@ -297,7 +298,7 @@ def store_translations(recipient, sender, third_arg):
 
 def store_votes(recipient, sender, third_arg):
     translations.submit_vote(sender.last_message(recipient)['content'])
-    print(f'Vote cast from {sender.name}: {sender.last_message(recipient)['content']}')
+    print(f'Vote cast from {sender.name}: {sender.last_message(recipient)["content"]}')
     return ''
 
 

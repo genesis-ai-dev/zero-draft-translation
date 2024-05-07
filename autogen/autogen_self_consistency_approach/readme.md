@@ -9,6 +9,7 @@ Run the following command to install the necessary packages:
 
 ```bash
 pip install pyautogen chromadb sacrebleu python-Levenshtein tiktoken dotenv 
+pip install markdownify vectordb anthropic pypdf 
 ```
 
 ## Environment Setup

@@ -1,5 +1,5 @@
 import autogen
-from autogen import AssistantAgent, UserProxyAgent, ConversableAgent
+from autogen import AssistantAgent, UserProxyAgent, ConversableAgent, gather_usage_summary
 from autogen.agentchat.conversable_agent import Agent, initiate_chats
 from autogen.agentchat.contrib.retrieve_assistant_agent import RetrieveAssistantAgent
 from autogen.agentchat.contrib.retrieve_user_proxy_agent import RetrieveUserProxyAgent
@@ -23,7 +23,7 @@ import tiktoken
 from Levenshtein import ratio
 from CustomRetrieveUserProxyAgent import CustomRetrieveUserProxyAgent
 from ScriptureReference import ScriptureReference
-
+import time
 
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -31,18 +31,18 @@ anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
 
 
 config_list = [
-    {
-        "model": "claude-3-haiku-20240307",
-        # "model": "claude-3-opus-20240229",
-        "api_key": anthropic_api_key,
-        "base_url": "https://api.anthropic.com",
-        "api_type": "anthropic",
-        "model_client_cls": "AnthropicClient",
-    },
     # {
-    #     'model': 'gpt-4-turbo',
-    #     'api_key': openai_api_key,
+    #     "model": "claude-3-haiku-20240307",
+    #     # "model": "claude-3-sonnet-20240229",
+    #     "api_key": anthropic_api_key,
+    #     "base_url": "https://api.anthropic.com",
+    #     "api_type": "anthropic",
+    #     "model_client_cls": "AnthropicClient",
     # },
+    {
+        'model': 'gpt-4o',
+        'api_key': openai_api_key,
+    },
     # # Local model below may have an issue with function calling (i.e., calling RAG agent)
     # {
     #     'model': 'does not matter',
@@ -59,20 +59,24 @@ openai_ef = embedding_functions.OpenAIEmbeddingFunction(
                 model_name="text-embedding-ada-002"
             )
 
-num_agents = 20 # >= 4
+num_agents = 10 # >= 4
 source_language = 'English'
 target_language = os.getenv('TARGET_LANGUAGE')
 # Enter verse range to be translated 
-passages = ScriptureReference('gen 1:1', 'gen 1:5').verses
+passages = ScriptureReference('lev 6:1', 'lev 6:7').verses
+
+# example_files = [
+#     os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
+#     os.path.join(os.path.abspath(''), 'dictionary', 'quran_english_target_joined.txt'),
+# ]
 
 example_files = [
-    os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
-    os.path.join(os.path.abspath(''), 'dictionary', 'quran_english_target_joined.txt'),
+    os.path.join(os.path.abspath(''), 'dictionary', 'tmz', 'combined_verses_training.txt'),
 ]
 
-dictionary_files = [
-    os.path.join(os.path.abspath(''), 'dictionary', 'target_dictionary.txt'),
-]
+# dictionary_files = [
+#     os.path.join(os.path.abspath(''), 'dictionary', 'target_dictionary.txt'),
+# ]
 
 
 current_passage = passages[0]
@@ -104,15 +108,6 @@ def text_split(text: str) -> List[str]:
 
     return result
 
-example_files = [
-    os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
-    os.path.join(os.path.abspath(''), 'dictionary', 'quran_english_target_joined.txt'),
-]
-
-dictionary_files = [
-    os.path.join(os.path.abspath(''), 'dictionary', 'target_dictionary.txt'),
-]
-
 # resources = TextFileProcessor(
 #     file_paths=files,
 #     text_split_function=text_split,
@@ -141,28 +136,28 @@ librarian = CustomRetrieveUserProxyAgent(
     },
 )
 
-dictionarian = CustomRetrieveUserProxyAgent(
-    name='Librarian',
-    is_termination_msg=termination_msg,
-    human_input_mode='NEVER',
-    max_consecutive_auto_reply=3,
-    code_execution_config=False,
-    description='Assistant who has extra content retrieval power for looking up words in a dictionary.',
-    retrieve_config={
-        'task': 'qa',
-        'docs_path': dictionary_files,
-        # 'custom_text_types': ['txt'], 
-        'model': config_list[0]['model'],
-        'must_break_at_empty_line': False, ## Not included in example
-        'client': client,
-        'embedding_function': openai_ef, ## Not included in example
-        # 'get_or_create': True,
-        'context_max_tokens':50000,
-        # 'custom_text_split_function': text_split,
-        'chunk_mode': 'one_line',
-        'collection_name': 'dictionary',
-    },
-)
+# dictionarian = CustomRetrieveUserProxyAgent(
+#     name='Librarian',
+#     is_termination_msg=termination_msg,
+#     human_input_mode='NEVER',
+#     max_consecutive_auto_reply=3,
+#     code_execution_config=False,
+#     description='Assistant who has extra content retrieval power for looking up words in a dictionary.',
+#     retrieve_config={
+#         'task': 'qa',
+#         'docs_path': dictionary_files,
+#         # 'custom_text_types': ['txt'], 
+#         'model': config_list[0]['model'],
+#         'must_break_at_empty_line': False, ## Not included in example
+#         'client': client,
+#         'embedding_function': openai_ef, ## Not included in example
+#         # 'get_or_create': True,
+#         'context_max_tokens':50000,
+#         # 'custom_text_split_function': text_split,
+#         'chunk_mode': 'one_line',
+#         'collection_name': 'dictionary',
+#     },
+# )
 
 
 
@@ -175,8 +170,8 @@ def retrieve_example_content(
     n_results: Annotated[int, 'Number of results'] = 20,
 ) -> str:
     # n_results = 30
-    librarian.n_results = 30
-    dictionarian.n_results = 8 
+    librarian.n_results = 250
+    # dictionarian.n_results = 8 
 
     # Check if the content needs updating
     update_context_case1, update_context_case2 = librarian._check_update_context(message)
@@ -189,23 +184,23 @@ def retrieve_example_content(
         _context = {'problem': message, 'n_results': librarian.n_results}
         lib_ret_msg = librarian.message_generator(librarian, None, _context)
 
-    words = list(set(message.split()))
-    all_entries = []
+    # words = list(set(message.split()))
+    # all_entries = []
 
-    for word in words:
-        update_context_case1, update_context_case2 = dictionarian._check_update_context(word)
-        if (update_context_case1 or update_context_case2) and dictionarian.update_context:
-            print(f'Updating context for dictionarian with word: {word}')
-            dictionarian.problem = word if not hasattr(dictionarian, 'problem') else dictionarian.problem
-            _, dict_ret_msg = dictionarian._generate_retrieve_user_reply(word)
-        else:
-            print(f'Not updating context for dictionarian with word: {word}')
-            _context = {'problem': word, 'n_results': dictionarian.n_results}
-            dict_ret_msg = dictionarian.message_generator(dictionarian, None, _context)
-        all_entries.append(dict_ret_msg)
-    dict_ret_msg = '\n\n'.join(all_entries)
+    # for word in words:
+    #     update_context_case1, update_context_case2 = dictionarian._check_update_context(word)
+    #     if (update_context_case1 or update_context_case2) and dictionarian.update_context:
+    #         print(f'Updating context for dictionarian with word: {word}')
+    #         dictionarian.problem = word if not hasattr(dictionarian, 'problem') else dictionarian.problem
+    #         _, dict_ret_msg = dictionarian._generate_retrieve_user_reply(word)
+    #     else:
+    #         print(f'Not updating context for dictionarian with word: {word}')
+    #         _context = {'problem': word, 'n_results': dictionarian.n_results}
+    #         dict_ret_msg = dictionarian.message_generator(dictionarian, None, _context)
+    #     all_entries.append(dict_ret_msg)
+    # dict_ret_msg = '\n\n'.join(all_entries)
 
-    ret_msg = f'{lib_ret_msg}\n\n{dict_ret_msg}'
+    ret_msg = f'{lib_ret_msg}\n' # \n{dict_ret_msg}'
 
     return ret_msg if ret_msg else message
 
@@ -413,6 +408,8 @@ voting_lead.register_nested_chats(
 
 translated_verses = []
 
+start_time = time.perf_counter()  # Start time
+
 try:
     for i, _ in enumerate(passages):
 
@@ -450,7 +447,12 @@ except Exception as e:
     [print(verse) for verse in translated_verses]
 
 finally:
+    end_time = time.perf_counter()  # End time
     [print(verse) for verse in translated_verses]
+    print(f'Time elapsed: {end_time - start_time} seconds')
+
+    usage_summary = gather_usage_summary([user_proxy, sampling_lead, voting_lead] + sampling_agents + voting_agents + [librarian]) # + librarian? + dictionarian?
+    print(usage_summary['usage_excluding_cached_inference'])
 
 
 

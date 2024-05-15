@@ -109,10 +109,26 @@ class AnthropicClient:
             "input": response.usage.input_tokens if response.usage is not None else 0,
             "output": response.usage.output_tokens if response.usage is not None else 0,
         }
-        price_per_million = {
-            "input": 15,
-            "output": 75,
+        prices = {
+            'claude-3-haiku-20240307': {
+                'input': 0.25,
+                'output': 1.25,
+            },
+            "claude-3-sonnet-20240229": {
+                'input': 3,
+                'output': 15,
+            },
+            "claude-3-opus-20240229": {
+                'input': 15,
+                'output': 75,
+            },
         }
+        
+        # price_per_million = {
+        #     "input": 15,
+        #     "output": 75,
+        # }
+        price_per_million = prices[self.model]
         for key, value in tokens.items():
             total += value * price_per_million[key] / 1_000_000
 

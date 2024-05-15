@@ -13,3 +13,4 @@ tmp/
 /tmp
 /autogen_self_consistency_approach/__pycache__
 tmp/db/chroma.sqlite3
+*.pyc

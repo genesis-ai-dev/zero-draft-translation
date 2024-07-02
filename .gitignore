@@ -6,6 +6,7 @@
 **/*.sqlite3
 # Ignore text_formatting scripts folder
 dictionary/
+resources/
 compiled_states/
 cache/
 tmp/
@@ -13,3 +14,4 @@ tmp/
 /autogen_self_consistency_approach/__pycache__
 tmp/db/chroma.sqlite3
 *.pyc
+*.json

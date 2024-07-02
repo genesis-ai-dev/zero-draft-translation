@@ -63,7 +63,7 @@ num_agents = 10 # >= 4
 source_language = 'English'
 target_language = os.getenv('TARGET_LANGUAGE')
 # Enter verse range to be translated 
-passages = ScriptureReference('lev 6:1', 'lev 6:7').verses
+passages = ScriptureReference('lev 5:20', 'lev 5:26').verses
 
 # example_files = [
 #     os.path.join(os.path.abspath(''), 'dictionary', 'target_training_dataset_joined.txt'),
@@ -324,7 +324,9 @@ for i in range(num_agents):
         description=f'Bilingual interpreter {i} who is assigned the task of selecting the best translation from many options.',
         ))
     
-
+def reset_agents(agents):
+    for agent in agents:
+        agent.reset()
 
 
 for caller in sampling_agents:
@@ -410,6 +412,8 @@ translated_verses = []
 
 start_time = time.perf_counter()  # Start time
 
+all_agents = [user_proxy, sampling_lead, voting_lead] + sampling_agents + voting_agents + [librarian] # + dictionarian?
+
 try:
     for i, _ in enumerate(passages):
 
@@ -440,6 +444,7 @@ try:
         print(f'\nWinner: {translations.majority_vote}')
 
         translations.reset()
+        # reset_agents(all_agents) # removes cost info
 
 except Exception as e:
     print(f'Error: {e}')

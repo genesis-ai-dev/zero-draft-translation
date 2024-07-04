@@ -43,6 +43,9 @@ class TranslationMetric:
         return bleu.corpus_score([gen], [[ref]]).score
 
     def _load_text(self, input_text):
+        # Remove U+202B and U+202C characters if they exist
+        input_text = [line.replace('\u202B', '').replace('\u202C', '') for line in input_text]
+        
         if isinstance(input_text, list):
             return input_text
         elif os.path.isfile(input_text):
@@ -51,9 +54,10 @@ class TranslationMetric:
         else:
             return [line.strip() for line in input_text.split('\n') if line.strip()]
 
-    def compare_translations(self, generated, reference):
+    def compare_translations(self, generated, reference, vrefs):
         self.generated = self._load_text(generated)
         self.reference = self._load_text(reference)
+        self.vrefs=vrefs
 
         if len(self.generated) != len(self.reference):
             raise ValueError("Generated and reference translations have different number of lines.")
@@ -68,11 +72,15 @@ class TranslationMetric:
     def generate_report(self, file_path):
         if not self.scores:
             raise ValueError("No scores available. Run compare_translations first.")
-        
+        # Make list where each line of self.generated is prepended with the corresponding verse reference from self.vrefs
+        generated_with_refs = [f"{self.vrefs[i]} {self.generated[i]}" for i in range(len(self.generated))]
+        # do same thing for self.reference
+        reference_with_refs = [f"{self.vrefs[i]} {self.reference[i]}" for i in range(len(self.reference))]
+
         report = {
             "datetime": datetime.now().isoformat(),
-            "generated_translation": self.generated,
-            "reference_translation": self.reference,
+            "generated_translation": generated_with_refs,
+            "reference_translation": generated_with_refs,
             "scores": {
                 metric: {
                     "overall": score.overall,

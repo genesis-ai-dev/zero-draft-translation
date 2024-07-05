@@ -40,6 +40,28 @@ passages = {
     ],
 }
 
+lang = {
+    'Arabic': {
+        'code': 'ara',
+        'ebible': 'arb-arbnav',
+        'target_file': {
+            'Tamazight': 'resources/tmz/arb_tmz_verses.txt',
+        },
+    },
+    'Tamazight': {
+        'code': 'tmz',
+        'ebible': '',
+        'target_file': '',
+    },
+    'English': {
+        'code': 'eng',
+        'ebible': 'eng-eng-asv',
+        'target_file': {
+            'Tamazight': 'resources/tmz/eng_tmz_verses.txt',
+        },
+    },
+}
+
 
 def get_ngrams(text, n):
     words = text.split()
@@ -87,32 +109,33 @@ def find_relevant_context(all_lines, verse_to_translate, lang, max_n=4, max_numb
     verse_ngrams = find_unique_ngrams(verse_to_translate, max_n)
     
     line_ngrams = []
-    ngram_dict = defaultdict(int)
-    
-    # Process all lines to get ngrams and their frequencies
-    for line in all_lines:
+    scores = [0] * len(all_lines)
+
+    # Process all lines to get ngrams and calculate initial scores
+    print(f"For verse: {verse_to_translate}")
+    for i, line in enumerate(all_lines):
         lang_text = extract_lang_text(line, lang)
         processed_line = preprocess_text(lang_text)
         line_unique_ngrams = find_unique_ngrams(processed_line, max_n)
         line_ngrams.append(line_unique_ngrams)
         for ngram in line_unique_ngrams:
             if ngram in verse_ngrams:
-                ngram_dict[ngram] += 1
+                scores[i] += 1 / len(processed_line)
     
-    # Calculate initial scores for each line
-    scores = []
-    for i, (unique_ngrams, line) in enumerate(zip(line_ngrams, all_lines)):
-        score = sum(ngram_dict[ngram] for ngram in unique_ngrams if ngram in verse_ngrams)
-        normalized_score = score / len(extract_lang_text(line, lang))
-        scores.append(normalized_score)
+    # Print top 10 scores
+    print("Top 10 scores:")
+    for i, score in sorted(enumerate(scores), key=lambda x: x[1], reverse=True)[:10]:
+        print(f"Line {i+1}: {all_lines[i].strip()[:100]}... with score {score}")
     
     relevant_lines = []
     known_ngrams = set()
+    selected_indices = set()
     scores_reset = False
     
     while len(relevant_lines) < max_number_closest_verses:
         top_score_index = scores.index(max(scores))
         relevant_lines.append(all_lines[top_score_index])
+        selected_indices.add(top_score_index)
         
         # Update known ngrams
         new_ngrams = line_ngrams[top_score_index] - known_ngrams
@@ -128,20 +151,22 @@ def find_relevant_context(all_lines, verse_to_translate, lang, max_n=4, max_numb
         
         if not scores_reset:
             # Recalculate scores for all remaining lines
-            for i, (line_unique_ngrams, line) in enumerate(zip(line_ngrams, all_lines)):
-                if i != top_score_index:
-                    new_score = sum(ngram_dict[ngram] for ngram in line_unique_ngrams if ngram in verse_ngrams and ngram not in known_ngrams)
-                    normalized_new_score = new_score / len(extract_lang_text(line, lang))
-                    scores[i] = normalized_new_score
+            for i, line_unique_ngrams in enumerate(line_ngrams):
+                if i not in selected_indices:
+                    new_score = sum(1 / len(extract_lang_text(all_lines[i], lang)) 
+                                    for ngram in line_unique_ngrams 
+                                    if ngram in verse_ngrams and ngram not in known_ngrams)
+                    scores[i] = new_score
             
             # If all scores are zero, reset them to their initial values
             if all(score == 0 for score in scores):
                 print("Resetting scores...")
-                for i, (unique_ngrams, line) in enumerate(zip(line_ngrams, all_lines)):
-                    if i not in [all_lines.index(rel_line) for rel_line in relevant_lines]:
-                        score = sum(ngram_dict[ngram] for ngram in unique_ngrams if ngram in verse_ngrams)
-                        normalized_score = score / len(extract_lang_text(line, lang))
-                        scores[i] = normalized_score
+                for i, unique_ngrams in enumerate(line_ngrams):
+                    if i not in selected_indices:
+                        score = sum(1 / len(extract_lang_text(all_lines[i], lang)) 
+                                    for ngram in unique_ngrams 
+                                    if ngram in verse_ngrams)
+                        scores[i] = score
                 scores_reset = True
 
     print(f"Found {len(relevant_lines)} relevant context lines.")

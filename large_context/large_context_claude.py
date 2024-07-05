@@ -7,18 +7,22 @@ import re
 from utils import *
 from TranslationMetric import TranslationMetric
 
+#*******************************PARAMETERS*************************************
 
 model_api = "anthropic" # or "openai" | "anthropic"
-model_name = "claude-3-5-sonnet-20240620" # or "gpt-4o" for OpenAI | "claude-3-5-sonnet-20240620" | 
+model_name = "claude-3-5-sonnet-20240620" # "gpt-4o" | "claude-3-5-sonnet-20240620" | 
 number_closest_verses = 32 # Number of examples to provide to the model
 max_ngram = 3 # Maximum n-gram length to consider for context matching
-genre = 'apocalyptic' # options: historical, prophetic, poetic, wisdom, gospel, epistle, apocalyptic, law (see utils.py)
-parallel_file = 'resources/tmz/eng_tmz_verses.txt' # __source [------] __target [------] examples
-ebible_source = 'eng-eng-asv' # Containing verses to be translated
+genre = "gospel" # options: historical, prophetic, poetic, wisdom, gospel, epistle, apocalyptic, law (see utils.py)
 source_lang = "English"
-source_code = 'eng' # code found in parallel file
 target_lang = "Tamazight"
-target_code = 'tmz' # code found in parallel file
+
+#******************************************************************************
+
+parallel_file = lang[source_lang]['target_file'][target_lang] # __source [------] __target [------] examples
+ebible_source = lang[source_lang]['ebible'] # Containing verses to be translated
+source_code = lang[source_lang]['code'] # code found in parallel file
+target_code = lang[target_lang]['code'] # code found in parallel file
 
 model = Model(api=model_api, model_name=model_name)
 
@@ -30,7 +34,6 @@ verses = [verse[1] for verse in raw_verses]
 references = [verse[0] for verse in raw_verses]
 print('References (restricted list)\n', references)
 
-
 # Get example translation pairs for context (exclude lines to be translated)
 directory_path = os.path.join(os.path.abspath(''), parallel_file)
 all_lines = read_files_to_string(directory_path, restricted_list=references)
@@ -40,8 +43,6 @@ for line in all_lines[:5]:
     print(line.strip())
 
 start_time = time.perf_counter()  # Start time
-
-
 
 evaluator = TranslationMetric(
     model_name=model_name,
@@ -102,6 +103,16 @@ results = evaluator.compare_translations(generated_translations, reference_trans
 for metric, score in results.items():
     print(f"{metric} overall score: {score.overall}")
 
+# get date, time
+from datetime import datetime
+now = datetime.now()
+dt_string = now.strftime("%Y-%m-%d %H:%M:%S").replace(":","_")
 
 # Generate and save the report
-evaluator.generate_report(f"{source_code} to {target_code} report - {number_closest_verses}-sample {genre} - {model_name} {max_ngram}-gram.json")
+# Create report subdirectory if it doesn't exist
+report_dir = os.path.join(os.path.dirname(__file__), 'reports')
+os.makedirs(report_dir, exist_ok=True)
+
+# Save the report to the report subdirectory
+report_path = os.path.join(report_dir, f"{source_code} to {target_code} report - {number_closest_verses}-sample {genre} - {model_name} {max_ngram}-gram - {dt_string}.json")
+evaluator.generate_report(report_path)

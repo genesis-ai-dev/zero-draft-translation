@@ -86,16 +86,6 @@ for i, verse in enumerate(verses):
 end_time = time.perf_counter()
 print(f"Time taken: {end_time - start_time} seconds")
 
-# Print all reference and generated translations
-print("Reference translations:")
-for ref in reference_translations:
-    print(ref)
-print("\n---\n")
-print("Generated translations:")
-for gen in generated_translations:
-    print(gen)
-print("\n---\n")
-
 # Evaluate translations
 results = evaluator.compare_translations(generated_translations, reference_translations, references)
 

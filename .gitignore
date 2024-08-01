@@ -15,4 +15,3 @@ tmp/
 tmp/db/chroma.sqlite3
 *.pyc
 *.json
-*.png

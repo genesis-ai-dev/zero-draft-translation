@@ -38,6 +38,7 @@ class Model:
                 }
             ]
         )
+        print("full model response:", message)
         translation = re.search(r'\[\[(.*?)\]\]', message.content[0].text)
         return translation.group(1) if translation else "Translation not found"
 
@@ -51,5 +52,6 @@ class Model:
             max_tokens=1000,
             temperature=0
         )
+        print("full model response:", response)
         translation = re.search(r'\[\[(.*?)\]\]', response.choices[0].message.content)
         return translation.group(1) if translation else "Translation not found"

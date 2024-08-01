@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-# reader = PdfReader("C:/Users/caleb/Bible Translation Project/autogen-translator/text_formatting_scripts/2401.16582v1.pdf")
 # number_of_pages = len(reader.pages)
 # text = ''.join(page.extract_text() for page in reader.pages)
 # print(text[:2155])

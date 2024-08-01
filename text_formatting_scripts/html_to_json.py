@@ -62,7 +62,7 @@ def parse_directory(directory_path):
     return entries
 
 # Change this to the path where your HTML files are located
-directory_path = 'C:/Users/caleb/Bible Translation Project/No code/mrw/mrw/dict/lexicon'
+directory_path = 'html/file/directory/No code/mrw/mrw/dict/lexicon'
 
 # Parse the directory and save to JSON
 dictionary_entries = parse_directory(directory_path)

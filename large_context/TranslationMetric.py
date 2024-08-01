@@ -15,14 +15,17 @@ class ScoreContainer:
 class TranslationMetric:
     def __init__(self, **kwargs):
         self.kwargs = kwargs
-        self.generated = None
-        self.reference = None
+        self.generated = []
+        self.reference = []
+        self.vrefs = []
+        self.ngram_scores = []
         self.scores = {}
         self.metrics = {
             "characTER": self._character_score,
             "chrF": self._chrf_score,
             "BLEU": self._bleu_score
         }
+        self.report_path = None
 
     def _character_score(self, gen, ref):
         gen_chars = self._preprocess(gen)
@@ -31,7 +34,6 @@ class TranslationMetric:
         return edit_distance / max(len(gen_chars), len(ref_chars))
 
     def _preprocess(self, text):
-        # Remove whitespace and punctuation
         return ''.join(ch for ch in text if not unicodedata.category(ch).startswith('P') and not ch.isspace())
 
     def _chrf_score(self, gen, ref):
@@ -43,7 +45,6 @@ class TranslationMetric:
         return bleu.corpus_score([gen], [[ref]]).score
 
     def _load_text(self, input_text):
-        # Remove U+202B and U+202C characters if they exist
         input_text = [line.replace('\u202B', '').replace('\u202C', '') for line in input_text]
         
         if isinstance(input_text, list):
@@ -54,46 +55,48 @@ class TranslationMetric:
         else:
             return [line.strip() for line in input_text.split('\n') if line.strip()]
 
-    def compare_translations(self, generated, reference, vrefs):
-        self.generated = self._load_text(generated)
-        self.reference = self._load_text(reference)
-        self.vrefs=vrefs
-
-        if len(self.generated) != len(self.reference):
-            raise ValueError("Generated and reference translations have different number of lines.")
-
-        for metric_name, metric_func in self.metrics.items():
-            individual_scores = [metric_func(gen, ref) for gen, ref in zip(self.generated, self.reference)]
-            overall_score = sum(individual_scores) / len(individual_scores)
-            self.scores[metric_name] = ScoreContainer(individual_scores, overall_score)
-
-        return self.scores
-
-    def generate_report(self, file_path):
-        if not self.scores:
-            raise ValueError("No scores available. Run compare_translations first.")
-        # Make list where each line of self.generated is prepended with the corresponding verse reference from self.vrefs
-        generated_with_refs = [f"{self.vrefs[i]} {self.generated[i]}" for i in range(len(self.generated))]
-        # do same thing for self.reference
-        reference_with_refs = [f"{self.vrefs[i]} {self.reference[i]}" for i in range(len(self.reference))]
-
+    def initialize_report(self, file_path):
+        self.report_path = file_path
         report = {
             "datetime": datetime.now().isoformat(),
-            "generated_translation": generated_with_refs,
-            "reference_translation": generated_with_refs,
-            "scores": {
-                metric: {
-                    "overall": score.overall,
-                    "individual": score.individual
-                } for metric, score in self.scores.items()
-            },
+            "generated_translation": [],
+            "reference_translation": [],
+            "ngram_scores": [],
+            "scores": {metric: {"overall": 0, "individual": []} for metric in self.metrics},
             "parameters": self.kwargs
         }
-
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(report, f, indent=4, ensure_ascii=False)
 
-        print(f"Report generated and saved to {file_path}")
+    def update_report(self, verse, generated, reference, vref, ngram_score):
+        self.generated.append(generated)
+        self.reference.append(reference)
+        self.vrefs.append(vref)
+        self.ngram_scores.append(ngram_score)
+
+        with open(self.report_path, 'r+', encoding='utf-8') as f:
+            report = json.load(f)
+            report["generated_translation"].append(f"{vref} {generated}")
+            report["reference_translation"].append(f"{vref} {reference}")
+            report["ngram_scores"].append(ngram_score)
+            
+            for metric_name, metric_func in self.metrics.items():
+                score = metric_func(generated, reference)
+                report["scores"][metric_name]["individual"].append(score)
+                overall = sum(report["scores"][metric_name]["individual"]) / len(report["scores"][metric_name]["individual"])
+                report["scores"][metric_name]["overall"] = overall
+
+            f.seek(0)
+            json.dump(report, f, indent=4, ensure_ascii=False)
+            f.truncate()
+
+    def finalize_report(self):
+        with open(self.report_path, 'r+', encoding='utf-8') as f:
+            report = json.load(f)
+            report["datetime_finished"] = datetime.now().isoformat()
+            f.seek(0)
+            json.dump(report, f, indent=4, ensure_ascii=False)
+            f.truncate()
 
 # Example usage
 # evaluator = TranslationEvaluator(model_name="MyTranslationModel", version="1.0")

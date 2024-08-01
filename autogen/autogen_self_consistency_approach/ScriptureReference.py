@@ -303,14 +303,14 @@ class ScriptureReference:
 # for verse in scripture_ref.verses:
 #     print(verse)
 
-# scripture_ref = ScriptureReference("rev22:20", "rev22:21", 'C:/Users/caleb/Bible Translation Project/No code/Tamazight/text', 'usfm')
+# scripture_ref = ScriptureReference("rev22:20", "rev22:21", 'path/to/folder/containing/SFM/books', 'usfm')
 # print("Verses from USFM:")
 # for i, verse in enumerate(scripture_ref.verses):
 #     if i < 10: 
 #         print(verse)
 
 # # Write the verses to a file
-# output_path = 'C:/Users/caleb/Bible Translation Project/No code/Tamazight/text/output/verses.txt'
+# output_path = 'destination/path/verses.txt'
 # with open(output_path, 'w', encoding='utf-8') as outfile:
 #     for verse in scripture_ref.verses:
 #         outfile.write(verse + '\n')

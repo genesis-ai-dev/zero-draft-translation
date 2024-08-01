@@ -21,11 +21,11 @@ book_codes = {
         'number': 4
     },
     'DEU': {
-        'codes': ['Deut', 'Dt', '5M'],
+        'codes': ['Deu', 'Dt', '5M'],
         'number': 5
     },
     'JOS': {
-        'codes': ['Josh', 'Jos'],
+        'codes': ['Jsh', 'Jos'],
         'number': 6
     },
     'JDG': {
@@ -33,23 +33,23 @@ book_codes = {
         'number': 7
     },
     'RUT': {
-        'codes': ['Ru', 'Rth'],
+        'codes': ['Ru', 'Rt'],
         'number': 8
     },
     '1SA': {
-        'codes': ['1Sam', '1Sm'],
+        'codes': ['1Sa', '1Sm'],
         'number': 9
     },
     '2SA': {
-        'codes': ['2Sam', '2Sm'],
+        'codes': ['2Sa', '2Sm'],
         'number': 10
     },
     '1KI': {
-        'codes': ['1Kg', '1K'],
+        'codes': ['1K'],
         'number': 11
     },
     '2KI': {
-        'codes': ['2Kg', '2K'],
+        'codes': ['2K'],
         'number': 12
     },
     '1CH': {
@@ -89,7 +89,7 @@ book_codes = {
         'number': 21
     },
     'SNG': {
-        'codes': ['Sos', 'Song'],
+        'codes': ['Sos', 'Son', 'Sng'],
         'number': 22
     },
     'ISA': {
@@ -117,7 +117,7 @@ book_codes = {
         'number': 28
     },
     'JOL': {
-        'codes': ['Joel', 'Jl'],
+        'codes': ['Joel', 'Jl', 'Jol'],
         'number': 29
     },
     'AMO': {
@@ -165,7 +165,7 @@ book_codes = {
         'number': 40
     },
     'MRK': {
-        'codes': ['Mk', 'Mar'],
+        'codes': ['Mk', 'Mar', 'Mrk'],
         'number': 41
     },
     'LUK': {
@@ -241,7 +241,7 @@ book_codes = {
         'number': 59
     },
     '1PE': {
-        'codes': ['1Pe', '2Pt'],
+        'codes': ['1Pe', '1Pt'],
         'number': 60
     },
     '2PE': {
@@ -396,9 +396,16 @@ class ScriptureReference:
         return [[verses[i].replace(' ', '_'), bible_text[i]] for i in range(start_index, end_index + 1)]
 
     def extract_verses_from_usfm(self):
-        input_directory = self.bible_filename  # Assuming bible_filename is now a directory path for USFM files
+        input_directory = self.bible_filename
         verses = []
         files = [f for f in os.listdir(input_directory) if f.endswith('.SFM')]
+        
+        start_book = self.start_ref['bookCode']
+        start_chapter = self.start_ref['startChapter']
+        start_verse = self.start_ref['startVerse']
+        end_book = self.end_ref['bookCode']
+        end_chapter = self.end_ref['endChapter']
+        end_verse = self.end_ref['endVerse']
 
         for file in files:
             input_path = os.path.join(input_directory, file)
@@ -409,31 +416,43 @@ class ScriptureReference:
                     if re.match(r'\\id (\w+)', line):
                         book = line.split()[1]
                     if re.match(r'\\c (\d+)', line):
-                        chapter = line.split()[1]
+                        chapter = int(line.split()[1])
                     if re.match(r'\\v (\d+)', line):
-                        verse_number = line.split()[1]
-                        verse_text = re.sub(r'^\\v \d+ ', '', line)
-                        verse_text = re.sub(r'\\(\w+) .*?\\\1\*', '', verse_text)  # Remove tags
-                        verse_text = re.sub(r'[a-zA-Z\\]+', '', verse_text)  # Remove remaining Roman characters and backslashes
-                        formatted_verse = f"{book} {chapter}:{verse_number} {verse_text.strip()}"
-                        formatted_verse = [f"{book}_{chapter}:{verse_number}", verse_text.strip()]
-                        verses.append(formatted_verse)
+                        verse_number = int(line.split()[1])
+                        
+                        # Check if we're within the desired range
+                        if (book == start_book and chapter == start_chapter and verse_number >= start_verse) or \
+                           (book == start_book and chapter > start_chapter) or \
+                           (book_codes[book]['number'] > book_codes[start_book]['number']):
+                            if (book == end_book and chapter == end_chapter and verse_number <= end_verse) or \
+                               (book == end_book and chapter < end_chapter) or \
+                               (book_codes[book]['number'] < book_codes[end_book]['number']):
+                                verse_text = re.sub(r'^\\v \d+ ', '', line)
+                                verse_text = re.sub(r'\\(\w+) .*?\\\1\*', '', verse_text)
+                                verse_text = re.sub(r'[a-zA-Z\\]+', '', verse_text)
+                                verse_text = verse_text.strip()
+                                if verse_text == 'عفاون سغدات ئي واوال اد':
+                                    verse_text = ''
+                                formatted_verse = [f"{book}_{chapter}:{verse_number}", verse_text]
+                                verses.append(formatted_verse)
+                        
+                        # Stop if we've reached the end of the desired range
+                        if book == end_book and chapter == end_chapter and verse_number >= end_verse:
+                            return verses
+
         return verses
 
-# Example usage:
+# ebible example usage:
+
 # scripture_ref = ScriptureReference('lev 5:20', 'lev 5:26', "eng-engkjvcpb")
 # print("Verses between references:")
 # for verse in scripture_ref.verses:
 #     print(verse)
 
-# scripture_ref = ScriptureReference("rev22:20", "rev22:21", 'C:/Users/caleb/Bible Translation Project/No code/Tamazight/text', 'usfm')
-# print("Verses from USFM:")
-# for i, verse in enumerate(scripture_ref.verses):
-#     if i < 10: 
-#         print(verse)
+# ----------------------------------------------------------
 
-# # Write the verses to a file
-# output_path = 'C:/Users/caleb/Bible Translation Project/No code/Tamazight/text/output/verses.txt'
-# with open(output_path, 'w', encoding='utf-8') as outfile:
-#     for verse in scripture_ref.verses:
-#         outfile.write(verse + '\n')
+# usfm example usage:
+
+# scripture_ref = ScriptureReference('psa 32:3', bible_filename='folder/containing/SFM/book/files', source_type='usfm').verses
+
+# print(scripture_ref)

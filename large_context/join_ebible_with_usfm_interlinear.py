@@ -36,12 +36,12 @@ def combine_verses(eng_verses, tmz_verses):
 ebible_verses = ScriptureReference('Gen 1:1', 'Rev 22:21', 'eng-eng-asv').verses
 # remove all elements where the verse is empty
 ebible_verses = [verse for verse in ebible_verses if verse[0] != '']
-tmz_verses = ScriptureReference('Gen 1:1', 'Rev 22:21', 'C:/Users/caleb/Bible Translation Project/No code/Tamazight/text', 'usfm').verses
+tmz_verses = ScriptureReference('Gen 1:1', 'Rev 22:21', 'folder/containing/SFM/book/files', 'usfm').verses
 
 combined_verses = combine_verses(ebible_verses, tmz_verses)
 
 # Write the verses to a file
-output_path = 'C:/Users/caleb/Bible Translation Project/No code/Tamazight/text/output/eng_tmz_verses_new.txt'
+output_path = 'output/folder/eng_tmz_verses_new.txt'
 with open(output_path, 'w', encoding='utf-8') as outfile:
     for verse in combined_verses:
         outfile.write(verse + '\n')

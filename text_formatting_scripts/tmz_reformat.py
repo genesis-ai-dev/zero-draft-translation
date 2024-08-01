@@ -42,8 +42,8 @@ def extract_verses(input_directory, output_directory):
 
 # Example usage:
 # Assuming you have the directories set up, call the function like this:
-extract_verses('C:/Users/caleb/Bible Translation Project/No code/Tamazight/text', 
-               'C:/Users/caleb/Bible Translation Project/No code/Tamazight/text/output')
+extract_verses('C:/Users/No code/Tamazight/text', 
+               'C:/Users/No code/Tamazight/text/output')
 
 # Note: Paths need to be adjusted to your actual directory structure.
 

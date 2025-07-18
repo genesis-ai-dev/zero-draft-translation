@@ -16,7 +16,7 @@ This system leverages a structured, iterative approach involving multiple specia
 ## Installation  
 Ensure Python 3 and pip are installed on your system. Install the necessary Python libraries:  
 ```bash  
-pip install python-dotenv chromadb pyautogen  
+pip install python-dotenv chromadb ag2  
 ```  
   
 ## Setup  

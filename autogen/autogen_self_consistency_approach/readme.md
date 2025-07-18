@@ -8,7 +8,7 @@ This script facilitates a translation and voting process where n agents generate
 Run the following command to install the necessary packages:
 
 ```bash
-pip install pyautogen chromadb sacrebleu python-Levenshtein tiktoken dotenv 
+pip install ag2 chromadb sacrebleu python-Levenshtein tiktoken dotenv 
 pip install markdownify vectordb anthropic pypdf 
 ```
 

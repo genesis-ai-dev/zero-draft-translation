@@ -20,7 +20,7 @@ After feedback from the target language community, single-prompt responses from 
 ## Installation  
 Ensure Python 3 and pip are installed on your system. Install the necessary Python libraries:  
 ```bash  
-pip install python-dotenv chromadb pyautogen  
+pip install python-dotenv chromadb ag2  
 ```  
   
 ## Setup  

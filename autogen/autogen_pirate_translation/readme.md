@@ -36,7 +36,7 @@ Aye, the translation be keepin' true to the original intent. The Almighty's nami
 ## Installation  
 Ensure Python 3 and pip are installed on your system. Install the necessary libraries:  
 ```bash  
-pip install python-dotenv pyautogen  
+pip install python-dotenv ag2  
 ```  
   
 ## Setup  
